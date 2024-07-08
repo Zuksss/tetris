@@ -243,9 +243,9 @@ class Game extends Phaser.Scene {
     calculateComboBonus(): number {
         let comboBonus = 0;
 
-        // Award combo bonus if consecutive lines cleared are 5 or more
+        // combo scores if consecutive lines cleared are 5 or more
         if (this.consecutiveLinesCleared >= 5) {
-            comboBonus = (this.consecutiveLinesCleared - 4) * 50; // 5 lines or more start giving bonus
+            comboBonus = (this.consecutiveLinesCleared - 4) * 50; // 5 lines or more start giving bonus score
         }
 
         return comboBonus;
